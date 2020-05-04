@@ -79,7 +79,7 @@ class Seq:
     reverse_complement, transcribe, back_transcribe and translate (which are
     not applicable to sequences with a protein alphabet).
     """
-    __slots__ = ['_data', 'alphabet']
+    __slots__ = ('_data', 'alphabet')
 
     def __init__(self, data, alphabet=Alphabet.generic_alphabet):
         """Create a Seq object.
